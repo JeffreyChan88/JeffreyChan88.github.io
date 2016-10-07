@@ -7,6 +7,16 @@ document.getElementById( "option1" ).setAttribute( "onClick", "findweapon();" );
 document.getElementById("option3").innerHTML="Take the forest path";
 document.getElementById( "option3" ).setAttribute( "onClick", "forestpath();" );
 
+document.getElementById("option2" ).innerHTML="Fight the pirates";
+document.getElementById("option2").setAttribute("onClick","fightpirates();");
+
+function fightpirates() {
+    document.getElementById("option2").href = "Battles/player-vs-pirate/index.html";
+  }
+
+
+
+
 //insout//option1//findweapon//
 function findweapon() {
 
@@ -20,13 +30,7 @@ function findweapon() {
   document.getElementById("option2").setAttribute("onClick", "cave();");
 }
 
-document.getElementById("option2" ).innerHTML="Fight the pirates";
-document.getElementById("option2").setAttribute("fightpirates();");
-//link battle here
 
-function fightpirates() {
-document.getElementById("option2").setAttribute("https://jeffreychan88.github.io/TSIOF/Battles/player-vs-pirate/");
-}
 
 function forestpath() {
   document.getElementById("storyline").innerHTML ="As you were escaping through the forest, you see two signs. One says the book of curse, and the other says talking trees. You decided to.......";
