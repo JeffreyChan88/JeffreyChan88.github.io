@@ -22,7 +22,7 @@ document.getElementById("option2").setAttribute("onClick","fightpirates()")
 //link battle here
 
 function fightpirates() {
-window.location="file:///Users/bsd-12/Desktop/JeffreyChan88.github.io/TSIOF/Scenes/one/pirate/index.html";
+window.location="http://JeffreyChan88.github.io/TSIOF/Battles/pirate/index.html";
 }
 
 function forestpath() {
