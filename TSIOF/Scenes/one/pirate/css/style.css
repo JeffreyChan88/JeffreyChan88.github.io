@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Player VS Pirate</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,700,300' rel='stylesheet' type='text/css'>
-    
-    
-    
-        <style>
-      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      * {
+* {
   box-sizing: border-box;
 }
 
@@ -23,7 +12,7 @@ body {
 body {
   font: 18px 'Roboto';
   /*  background: linear-gradient(225deg,#2f2b6d,#1f0230);*/
-  background: url(https://elnabettina.files.wordpress.com/2013/05/dsc_1618.jpg) no-repeat center center;
+  background: linear-gradient(225deg, rgba(80, 0, 50, 0.4), rgba(0, 20, 80, 0.8)), url(https://elnabettina.files.wordpress.com/2013/05/dsc_1618.jpg) no-repeat center center;
   background-size: cover;
   /*  background-blend-mode: screen;*/
 }
@@ -239,15 +228,15 @@ body.shake {
 }
 
 .attack {
-  background: url(https://a2ua.com/fist/fist-010.jpg) no-repeat center center;
+  background: url(http://vignette4.wikia.nocookie.net/runescape2/images/8/84/White_2h_sword_detail.png/revision/latest?cb=20130102213938) no-repeat center center;
 }
 
 .frost-nova {
-  background: url(http://sciencenetlinks.com/media/filer_thumbnails/2011/10/28/rocks1.jpg__480x274_q85.jpg) no-repeat center center;
+  background: url(http://photos1.blogger.com/blogger/5666/2356/1600/scan0027.jpg) no-repeat center center;
 }
 
 .ice-shield {
-  background: url(http://previews.123rf.com/images/coprid/coprid1210/coprid121000025/15918252-Pile-of-dry-sand-isolated-on-white-Stock-Photo-silica.jpg) no-repeat center center;
+  background: url(https://s-media-cache-ak0.pinimg.com/originals/14/e0/84/14e0848d2e7ecfde663572e4661bc719.jpg) no-repeat center center;
 }
 
 .attack,
@@ -395,47 +384,3 @@ button {
   font-size: 16px;
   border-radius: 45%;
 }
-
-    </style>
-
-    
-        <script src="js/prefixfree.min.js"></script>
-
-    
-    
-  </head>
-
-  <body>
-
-    <center>
-  <div id="win" style="display:none;">
-<button>You Win! Continue.</button>
-  </div>
-  <div id="lose" style="display:none;">
-<button>You lose. Restart?</button>
-  </div>
-</center>
-<div class="battle-field">
-  <div class="player" id="Chrono" data-wep="frozenLance">
-    <div class="health-bar"><div class="health"></div></div>
-    <img src="https://yt3.ggpht.com/-zWdiL1gmomo/AAAAAAAAAAI/AAAAAAAAAAA/rnyUjdF6pZQ/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
-  </div>
-  <div class="enemy" id="Ozzy" data-wep="damascusRapier">
-    <div class="health-bar"><div class="health"></div></div>
-    <img src="https://s5.postimg.org/nhiqaf08n/hqdefault.jpg">
-  </div>
-</div>
-<ul class="controls">
-  <li class="attack"></li>
-  <li class="frost-nova"></li>
-  <li class="ice-shield"></li>
-</ul>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/velocity/0.7.0/jquery.velocity.min.js'></script>
-
-        <script src="js/index.js"></script>
-
-    
-    
-  </body>
-</html>
