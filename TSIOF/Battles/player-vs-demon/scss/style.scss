@@ -14,7 +14,7 @@ body{
 body {
   font: 18px 'Roboto';
 /*  background: linear-gradient(225deg,#2f2b6d,#1f0230);*/
-  background-image:url("https://www.salesfusion.com/wp-content/uploads/2015/10/graveyard.jpg");
+  background: linear-gradient(225deg,rgba(80,0,50,0.4),rgba(0,20,80,0.8)), url(https://www.salesfusion.com/wp-content/uploads/2015/10/graveyard.jpg) no-repeat center center;
   background-size: cover;
 /*  background-blend-mode: screen;*/
   
@@ -24,17 +24,17 @@ body {
 }
 
 .battle-field {
-  position: relative;
+  position: middle;
   height: 100vh;
   max-width: 800px;
   margin: 0 auto;
 }
 
 .player {
-  left: 100px;
+  left: 50px;
 }
 .enemy {
-  right: 100px;
+  right: 50px;
 }
 
 .enemy,
@@ -83,7 +83,7 @@ body {
     &.damage {
       color: #fff;
       font-size: 36px;
-      text-stroke: 1px black;
+      text-stroke: 1px red;
       animation: damageFly 1s $ease-hard 0.15s 1;
     }
     
@@ -130,12 +130,12 @@ body {
     }
     
     &.crit {
-      color: red;
+      color: orange;
     }
     
     &.dodge {
       color:#fff;
-      text-stroke: 1px black;
+      text-stroke: 1px blue;
     }
     &.stun {
       color: yellow;
@@ -239,15 +239,15 @@ body {
 }
 
 .attack {
-  background: url(http://www.taoistsecret.com/Images/talismanA.JPG) no-repeat center center;
+  background: url(http://vignette4.wikia.nocookie.net/runescape2/images/8/84/White_2h_sword_detail.png/revision/latest?cb=20130102213938) no-repeat center center;
 }
 
 .frost-nova {
-  background: url(http://www.yellowdragon-talismans.org.uk/images/2003-feng-shui/year-god.gif) no-repeat center center;
+  background: url(http://photos1.blogger.com/blogger/5666/2356/1600/scan0027.jpg) no-repeat center center;
 }
 
 .ice-shield {
-  background: url(http://g02.s.alicdn.com/kf/HTB1EFN6FVXXXXXmXVXXq6xXFXXX5/201499331/HTB1EFN6FVXXXXXmXVXXq6xXFXXX5.jpg) no-repeat center center;
+  background: url(https://s-media-cache-ak0.pinimg.com/originals/14/e0/84/14e0848d2e7ecfde663572e4661bc719.jpg) no-repeat center center;
 }
 
 .attack,
@@ -282,13 +282,13 @@ body {
 
 @keyframes attackSlash {
   0% {
-    transform: translate3d(50px,-50px,0) rotateZ(45deg);
+    transform: translate3d(50px,-50px,0) rotateZ(60deg);
   }
   50% {
     opacity: 1;
   }
   100% {
-    transform: translate3d(-20px,20px,0) rotateZ(45deg);
+    transform: translate3d(-20px,20px,0) rotateZ(60deg);
     opacity: 0;
   }
 }
@@ -326,16 +326,16 @@ body {
   }
   
   60% {
-    box-shadow: 0px 0px 0px 20px rgba(0,155,255,1), 0px 0px 0px 0px rgba(0,155,255,1), 0px 0px 0px 0px rgba(0,155,255,1), 0px 0px 0px 0px rgba(0,155,255,1);;
+    box-shadow: 0px 0px 0px 20px rgba(244, 89, 66,1), 0px 0px 0px 0px rgba(244, 89, 66,1), 0px 0px 0px 0px rgba(244, 89, 66,1), 0px 0px 0px 0px rgba(244, 89, 66,1);;
   }
   100% {
-    box-shadow: 0px 0px 0px 60px rgba(0,155,255,0), -40px 20px 0px 60px rgba(0,155,255,0), 40px -20px 0px 60px rgba(0,155,255,0), 0px -40px 0px 60px rgba(0,155,255,0);
+    box-shadow: 0px 0px 0px 60px rgba(244, 89, 66,0), -40px 20px 0px 60px rgba(244, 89, 66,0), 40px -20px 0px 60px rgba(244, 89, 66,0), 0px -40px 0px 60px rgba(244, 89, 66,0);
   }
 }
 
 @keyframes shake {
   0% {
-    transform: translateX(0px);
+    transform: translateX(2px);
   }
   33% {
     transform: translateX(-7px);
@@ -345,7 +345,7 @@ body {
     transform: translateX(7px);
   }
   100% {
-    transform: translateX(0px);
+    transform: translateX(2px);
   }
 }
 
@@ -382,10 +382,10 @@ body {
 
 @keyframes icearmor {
   0% {
-    box-shadow: -10px 0px 0px 3px rgba(0,155,255,0.25), 0px 0px 0px 3px rgba(0,155,255,0.25), 10px 0px 0px 3px rgba(0,155,255,0.25);
+    box-shadow: -10px 0px 0px 3px rgba(66, 244, 78,0.2), 0px 0px 0px 3px rgba(244, 164, 66, 0.3), 10px 0px 0px 3px rgba(0,155,255,0.25);
   }
   100% {
-    box-shadow: 10px 0px 0px 3px rgba(0,155,255,0.25), 0px 0px 0px 9px rgba(0,155,255,0.25), -10px 0px 0px 3px rgba(0,155,255,0.25);
+    box-shadow: 10px 0px 0px 3px rgba(66, 244, 78,0.2), 0px 0px 0px 9px rgba(244, 164, 66,0.3), -10px 0px 0px 3px rgba(0,155,255,0.25);
   }
 }
 
@@ -394,9 +394,10 @@ body {
     transform: rotateZ(0deg);
   }
   100% {
-    transform: rotateZ(360deg);
+    transform: rotateZ(180deg);
   }
 }
+
 button {
     background-color: #4CAF50; /* Green */
     border: none;
