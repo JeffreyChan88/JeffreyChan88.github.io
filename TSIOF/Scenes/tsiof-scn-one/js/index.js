@@ -21,10 +21,11 @@ function findweapon() {
 }
 
 document.getElementById("option2" ).innerHTML="Fight the pirates";
+document.getElementById("option2").setAttribute("fightpirates();");
 //link battle here
 
 function fightpirates() {
-document.getElementById("storyline").innerHTML ="Fight the pirates!";
+document.getElementById("option2").setAttribute("https://jeffreychan88.github.io/TSIOF/Battles/player-vs-pirate/");
 }
 
 function forestpath() {
@@ -49,7 +50,7 @@ function talkingtreereal() {
   document.getElementById("option1").innerHTML ="Get Ready!";
   option2.style.visibility ="hidden";
 }
-
+document.getElementById("option1").setAttribute("onClick", "hangon();");
 function mushroomkingdom() {
   document.getElementById("storyline").innerHTML ="As you walk in the mushroom kingdom, you did not know that pirates were hiding behind them. They wanted to rob you even though they do not know you have nothing left. So you say- bring it on, pirates, you can steal nothing from me!";
   document.getElementById("option1").innerHTML ="Bring it on, prirates, you can steal nothing from me!"
