@@ -564,3 +564,13 @@ if (Spellbook == 0) {
   });
 
   initBattle();
+
+  document.getElementById("win")setAttribute("onClick","win");
+document.getElementById("lose")setAttribute("onClick","lose");
+
+function win () {
+  window.location "file:///Users/bsd-12/Desktop/JeffreyChan88.github.io/TSIOF/Scenes/normal/index.html";
+}
+function lose () {
+  window.location "file:///Users/bsd-12/Desktop/JeffreyChan88.github.io/TSIOF/Scenes/respawn/index.html";
+}
